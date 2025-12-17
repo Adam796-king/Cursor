@@ -10,7 +10,8 @@ services:
       POSTGRES_PASSWORD: greco_pass
       POSTGRES_DB: greco_shop
     ports:
-      - "5432:5432"
+      # Endre ekstern port til 5433 for å unngå konflikt hvis noe annet bruker 5432
+      - "5433:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
       - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
