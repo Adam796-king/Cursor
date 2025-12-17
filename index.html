@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greco Roman Bryting | Nettbutikk</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Enkel Google-font for litt bedre typografi -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Enkel custom cursor: rød sirkel som følger musen -->
+  <div id="custom-cursor"></div>
+
+  <header class="nav">
+    <div class="logo">Greco<span>Shop</span></div>
+    <nav class="nav-links">
+      <a href="#home">Hjem</a>
+      <a href="#store">Butikk</a>
+      <a href="#favorites">Favoritter</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hjem -->
+    <section id="home" class="section hero">
+      <div class="hero-text">
+        <p class="eyebrow">Greco Roman</p>
+        <h1>Startsett for brytere</h1>
+        <p class="subtext">
+          Enkel nettbutikk med sko, drakter og beskyttelse. Klikk på produkter for å lagre dem som favoritter.
+        </p>
+        <div class="cta-group">
+          <a class="btn primary" href="#store">Se butikk</a>
+          <a class="btn ghost" href="#favorites">Favoritter</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-card">
+          <div class="badge">Nyhet</div>
+          <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=900&q=80" alt="Bryting hero" />
+          <p class="hero-caption">Plassholder-bilde. Bytt til eget senere.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Butikk -->
+    <section id="store" class="section store">
+      <div class="section-header">
+        <p class="eyebrow">Butikk</p>
+        <h2>Produkter</h2>
+        <p class="subtext">Klikk "Legg til favoritt" for å lagre produktene du liker.</p>
+      </div>
+      <div id="product-grid" class="grid"></div>
+    </section>
+
+    <!-- Favoritter -->
+    <section id="favorites" class="section favorites">
+      <div class="section-header">
+        <p class="eyebrow">Favoritter</p>
+        <h2>Dine valg</h2>
+        <p class="subtext">Fjern fra listen med ett klikk om du ombestemmer deg.</p>
+      </div>
+      <div id="favorites-grid" class="grid empty-state">
+        <p>Ingen favoritter enda. Legg til produkter fra butikken.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <h3>Kontakt</h3>
+      <p>Email: kontakt@grecoshop.no</p>
+      <p>Telefon: +47 22 33 44 55</p>
+    </div>
+    <div>
+      <h3>Adresse</h3>
+      <p>Oslo Brytehall</p>
+      <p>Styrkeveien 10, 0150 Oslo</p>
+    </div>
+    <div>
+      <h3>Sosiale medier</h3>
+      <p>Instagram / Facebook / TikTok</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
