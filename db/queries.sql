@@ -33,7 +33,7 @@ SELECT
 FROM orders o
 JOIN customers c ON o.customer_id = c.id;
 
--- 7) Hente alle ordrelinjer for én ordre
+-- 7) Hente alle ordrelinjer for en ordre
 SELECT
   oi.order_id,
   p.name,
